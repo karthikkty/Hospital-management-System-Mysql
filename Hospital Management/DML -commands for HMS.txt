@@ -1,0 +1,43 @@
+INSERT INTO Patient(email,password,name,address,gender)
+VALUES
+('ramesh@gmail.com','password123','Ramesh','Tamil Nadu', 'male'),
+('suresh@gmail.com','password123','Suresh','Karnataka', 'male'),
+('rakesh@gmail.com','password123','Rakesh','Gujarat', 'male')
+;
+
+INSERT INTO Doctor(email, gender, password, name)
+VALUES
+('manojmano7@gmail.com', 'male', 'password123', 'Dr.Manoj'),
+('sivani008@gmail.com', 'female', 'password123', 'Dr.sivani')
+;
+
+INSERT INTO Appointment(id,date,starttime,endtime,status)
+VALUES
+(1, '19-01-15', '09:00', '10:00', 'Done'),
+(2, '19-01-16', '10:00', '11:00', 'Done'),
+(3, '19-01-17', '14:00', '15:00', 'Done')
+;
+
+INSERT INTO Schedule(id,starttime,endtime,breaktime,day)
+VALUES
+(001,'09:00','17:00','12:00','Sunday'),
+(002,'09:00','17:00','12:00','Monday'),
+(003,'09:00','17:00','12:00','Tuesday'),
+(004,'09:00','17:00','12:00','Wednesday'),
+(005,'09:00','17:00','12:00','Thursday'),
+(006,'09:00','17:00','12:00','Friday')
+;
+
+INSERT INTO PatientsFillHistory(patient,history)
+VALUES
+('ramesh@gmail.com', 1),
+('suresh@gmail.com', 2),
+('rakesh@gmail.com', 3)
+;
+
+INSERT INTO DoctorViewsHistory(history,doctor)
+VALUES
+(1,'manojmano7@gmail.com'),
+(2,'sivani008@gmail.com'),
+
+;
